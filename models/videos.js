@@ -11,9 +11,10 @@ const videoSchema = new mongoose.Schema({
   likes: { type: Number },
   comments: { type: Number },
   subscriberCount: { type: Number },
+  estimatedEarning: { type: Number },
   updatedOn: { type: String },
   isSoftDelete: { type: Boolean, default: false },
-  createdDateTime: { type: Date, default: Date.now }, 
+  createdDateTime: { type: Date, default: Date.now },
 });
 
 const videos = mongoose.model("videos", videoSchema);

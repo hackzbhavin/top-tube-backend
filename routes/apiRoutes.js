@@ -24,6 +24,7 @@ router.post(apiRoutes.addVideo, async (req, res) => {
       likes,
       comments,
       subscriberCount,
+      estimatedEarning,
     } = req.body;
 
     const video = new videos({
@@ -37,6 +38,7 @@ router.post(apiRoutes.addVideo, async (req, res) => {
       likes,
       comments,
       subscriberCount,
+      estimatedEarning,
       updatedOn: new Date().toISOString(),
     });
 
